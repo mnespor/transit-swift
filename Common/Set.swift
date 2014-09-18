@@ -80,6 +80,27 @@ public struct Set<T : Hashable> : SequenceType
             }
     }
     
+    public mutating func removeAll() {
+        buckets.removeAll(keepCapacity: false)
+    }
+    
+    public mutating func removeElements<S: SequenceType where S.Generator.Element == T> (sequence: S) {
+        for element in [T](sequence) {
+            self.remove(element)
+        }
+    }
+    
+    public mutating func intersect (set: Set<T>) {
+        var elementsToRemove = Set<T>()
+        for element in self {
+            if !set.contains(element) {
+                elementsToRemove.addElement(element)
+            }
+        }
+        
+        self.removeElements(elementsToRemove)
+    }
+    
     public func isSubsetOf(set:Set<T>) -> Bool {
         for element in self {
             if !set.contains(element) {

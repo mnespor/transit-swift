@@ -45,9 +45,14 @@ let truthiness = true && false
 
 //let newSet = mySet + ["a", "b", "c", "d", "qux"]
 
-mySet.addElements(["a", "b", "c", "qux"])
+mySet.addElements(["a", "b", "c", "qux", "yeah"])
 
 mySet.intersects(Set(sequence: ["a", "what", "yeah"]))
+
+mySet.intersect(Set(sequence: ["a", "what", "yeah"]))
+
+mySet.allElements
+
 mySet.intersects(Set(sequence: ["okay", "what", "yeah"]))
 
 mySet.allElements
