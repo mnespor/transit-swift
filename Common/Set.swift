@@ -34,6 +34,18 @@ public struct Set<T : Hashable> : SequenceType
         return gen.next()
     }
     
+    public var description: String {
+        get {
+            return self.allElements.description
+        }
+    }
+    
+    public var debugDescription: String {
+        get {
+            return self.allElements.debugDescription
+        }
+    }
+    
     public init() {
     }
     
@@ -164,13 +176,5 @@ public func ==<T:Hashable>(lhs: Set<T>, rhs: Set<T>) -> Bool {
 
 public func !=<T:Hashable>(lhs: Set<T>, rhs: Set<T>) -> Bool {
     return !lhs.isSubsetOf(rhs) || !rhs.isSubsetOf(lhs)
-}
-
-// MARK: Union operations
-
-public func +<S: SequenceType> (set: Set<S.Generator.Element>, sequence: S) -> Set<S.Generator.Element> {
-    var result = set
-    result.addElements(sequence)
-    return result
 }
 
