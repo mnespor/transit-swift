@@ -80,6 +80,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1C3879D319CA35660001316B /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
 		1C5F335919C8FF9D00F0CD4E /* Set.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Set.swift; sourceTree = "<group>"; };
 		1C9B37FD19C8E9BF0071A339 /* ExampleApp-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ExampleApp-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C9B380119C8E9BF0071A339 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -161,6 +162,7 @@
 		1C9B37F219C8E95D0071A339 = {
 			isa = PBXGroup;
 			children = (
+				1C3879D319CA35660001316B /* MyPlayground.playground */,
 				1C9B37FF19C8E9BF0071A339 /* ExampleApp-iOS */,
 				1C9B381519C8E9BF0071A339 /* ExampleApp-iOSTests */,
 				1C9B382519C8E9DA0071A339 /* ExampleApp-OSX */,
