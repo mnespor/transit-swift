@@ -68,8 +68,8 @@ _NOTE: Transit is a work in progress and may evolve based on feedback. As a resu
 |boolean|Bool|Bool|
 |integer|Int|Int|
 |decimal|Double|Double|
-|keyword|com.mnespor.Transit.Keyword|com.mnespor.Transit.Keyword|
-|symbol|com.mnespor.Transit.Symbol|com.mnespor.Transit.Symbol|
+|keyword|com.mnespor.TransitKit.Keyword|com.mnespor.TransitKit.Keyword|
+|symbol|com.mnespor.TransitKit.Symbol|com.mnespor.TransitKit.Symbol|
 |big decimal|NSNumber|NSNumber|
 |big integer|NSNumber|NSNumber|
 |time|NSDate|NSDate|
@@ -78,9 +78,9 @@ _NOTE: Transit is a work in progress and may evolve based on feedback. As a resu
 |char|Character|Character|
 |array|Array|Array|
 |list|Array|Array|
-|set|com.mnespor.Transit.Set|com.mnespor.Transit.Set|
+|set|com.mnespor.TransitKit.Set|com.mnespor.TransitKit.Set|
 |map|Dictionary|Dictionary|
-|link|com.mnespor.Transit.Link|com.mnespor.Transit.Link|
+|link|com.mnespor.TransitKit.Link|com.mnespor.TransitKit.Link|
 
 ## Copyright and License
 

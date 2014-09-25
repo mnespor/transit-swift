@@ -22,8 +22,8 @@
 		1C9B383119C8E9DA0071A339 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C9B382F19C8E9DA0071A339 /* MainMenu.xib */; };
 		1C9B383D19C8E9DB0071A339 /* ExampleApp_OSXTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C9B383C19C8E9DB0071A339 /* ExampleApp_OSXTests.m */; };
 		1CA2CC7219C8FC9B00DA17F7 /* Transit_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA2CC7119C8FC9B00DA17F7 /* Transit_iOSTests.swift */; };
-		1CA2CC7519C8FC9B00DA17F7 /* Transit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA2CC6119C8FC9B00DA17F7 /* Transit.framework */; };
-		1CA2CC7619C8FC9B00DA17F7 /* Transit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA2CC6119C8FC9B00DA17F7 /* Transit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1CA2CC7519C8FC9B00DA17F7 /* TransitKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA2CC6119C8FC9B00DA17F7 /* TransitKit.framework */; };
+		1CA2CC7619C8FC9B00DA17F7 /* TransitKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA2CC6119C8FC9B00DA17F7 /* TransitKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1CA2CC8019C8FCAE00DA17F7 /* Transit-iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CA2CC7F19C8FCAE00DA17F7 /* Transit-iOS.h */; };
 		1CFD2DAE19CA888200C29CD0 /* SetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFD2DAD19CA888200C29CD0 /* SetTests.swift */; };
 /* End PBXBuildFile section */
@@ -73,7 +73,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				1CA2CC7619C8FC9B00DA17F7 /* Transit.framework in Embed Frameworks */,
+				1CA2CC7619C8FC9B00DA17F7 /* TransitKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -105,7 +105,7 @@
 		1C9B383C19C8E9DB0071A339 /* ExampleApp_OSXTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExampleApp_OSXTests.m; sourceTree = "<group>"; };
 		1C9B386B19C8F8930071A339 /* Reader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reader.swift; sourceTree = "<group>"; };
 		1C9B386D19C8F91B0071A339 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		1CA2CC6119C8FC9B00DA17F7 /* Transit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Transit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CA2CC6119C8FC9B00DA17F7 /* TransitKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TransitKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CA2CC6B19C8FC9B00DA17F7 /* Transit-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Transit-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CA2CC7019C8FC9B00DA17F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1CA2CC7119C8FC9B00DA17F7 /* Transit_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transit_iOSTests.swift; sourceTree = "<group>"; };
@@ -119,7 +119,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1CA2CC7519C8FC9B00DA17F7 /* Transit.framework in Frameworks */,
+				1CA2CC7519C8FC9B00DA17F7 /* TransitKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,7 +183,7 @@
 				1C9B381219C8E9BF0071A339 /* ExampleApp-iOSTests.xctest */,
 				1C9B382419C8E9DA0071A339 /* ExampleApp-OSX.app */,
 				1C9B383619C8E9DA0071A339 /* ExampleApp-OSXTests.xctest */,
-				1CA2CC6119C8FC9B00DA17F7 /* Transit.framework */,
+				1CA2CC6119C8FC9B00DA17F7 /* TransitKit.framework */,
 				1CA2CC6B19C8FC9B00DA17F7 /* Transit-iOSTests.xctest */,
 			);
 			name = Products;
@@ -397,9 +397,9 @@
 			productReference = 1C9B383619C8E9DA0071A339 /* ExampleApp-OSXTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		1CA2CC6019C8FC9B00DA17F7 /* Transit-iOS */ = {
+		1CA2CC6019C8FC9B00DA17F7 /* TransitKit-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1CA2CC7919C8FC9B00DA17F7 /* Build configuration list for PBXNativeTarget "Transit-iOS" */;
+			buildConfigurationList = 1CA2CC7919C8FC9B00DA17F7 /* Build configuration list for PBXNativeTarget "TransitKit-iOS" */;
 			buildPhases = (
 				1CA2CC5C19C8FC9B00DA17F7 /* Sources */,
 				1CA2CC5D19C8FC9B00DA17F7 /* Frameworks */,
@@ -410,14 +410,14 @@
 			);
 			dependencies = (
 			);
-			name = "Transit-iOS";
+			name = "TransitKit-iOS";
 			productName = "Transit-iOS";
-			productReference = 1CA2CC6119C8FC9B00DA17F7 /* Transit.framework */;
+			productReference = 1CA2CC6119C8FC9B00DA17F7 /* TransitKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		1CA2CC6A19C8FC9B00DA17F7 /* Transit-iOSTests */ = {
+		1CA2CC6A19C8FC9B00DA17F7 /* TransitKit-iOSTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1CA2CC7C19C8FC9B00DA17F7 /* Build configuration list for PBXNativeTarget "Transit-iOSTests" */;
+			buildConfigurationList = 1CA2CC7C19C8FC9B00DA17F7 /* Build configuration list for PBXNativeTarget "TransitKit-iOSTests" */;
 			buildPhases = (
 				1CA2CC6719C8FC9B00DA17F7 /* Sources */,
 				1CA2CC6819C8FC9B00DA17F7 /* Frameworks */,
@@ -428,7 +428,7 @@
 			dependencies = (
 				1CA2CC6D19C8FC9B00DA17F7 /* PBXTargetDependency */,
 			);
-			name = "Transit-iOSTests";
+			name = "TransitKit-iOSTests";
 			productName = "Transit-iOSTests";
 			productReference = 1CA2CC6B19C8FC9B00DA17F7 /* Transit-iOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -481,8 +481,8 @@
 				1C9B381119C8E9BF0071A339 /* ExampleApp-iOSTests */,
 				1C9B382319C8E9DA0071A339 /* ExampleApp-OSX */,
 				1C9B383519C8E9DA0071A339 /* ExampleApp-OSXTests */,
-				1CA2CC6019C8FC9B00DA17F7 /* Transit-iOS */,
-				1CA2CC6A19C8FC9B00DA17F7 /* Transit-iOSTests */,
+				1CA2CC6019C8FC9B00DA17F7 /* TransitKit-iOS */,
+				1CA2CC6A19C8FC9B00DA17F7 /* TransitKit-iOSTests */,
 			);
 		};
 /* End PBXProject section */
@@ -611,12 +611,12 @@
 		};
 		1CA2CC7419C8FC9B00DA17F7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 1CA2CC6019C8FC9B00DA17F7 /* Transit-iOS */;
+			target = 1CA2CC6019C8FC9B00DA17F7 /* TransitKit-iOS */;
 			targetProxy = 1CA2CC7319C8FC9B00DA17F7 /* PBXContainerItemProxy */;
 		};
 		1CA2CC7819C8FC9B00DA17F7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 1CA2CC6019C8FC9B00DA17F7 /* Transit-iOS */;
+			target = 1CA2CC6019C8FC9B00DA17F7 /* TransitKit-iOS */;
 			targetProxy = 1CA2CC7719C8FC9B00DA17F7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -1065,7 +1065,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_NAME = Transit;
+				PRODUCT_NAME = TransitKit;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1113,7 +1113,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = Transit;
+				PRODUCT_NAME = TransitKit;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1261,7 +1261,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1CA2CC7919C8FC9B00DA17F7 /* Build configuration list for PBXNativeTarget "Transit-iOS" */ = {
+		1CA2CC7919C8FC9B00DA17F7 /* Build configuration list for PBXNativeTarget "TransitKit-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1CA2CC7A19C8FC9B00DA17F7 /* Debug */,
@@ -1270,7 +1270,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1CA2CC7C19C8FC9B00DA17F7 /* Build configuration list for PBXNativeTarget "Transit-iOSTests" */ = {
+		1CA2CC7C19C8FC9B00DA17F7 /* Build configuration list for PBXNativeTarget "TransitKit-iOSTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1CA2CC7D19C8FC9B00DA17F7 /* Debug */,
