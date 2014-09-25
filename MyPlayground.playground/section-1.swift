@@ -31,7 +31,7 @@ mySet.contains("bleh")
 mySet.count
 
 var myGen = mySet.generate()
-myGen.next()
+myGen.next()!
 myGen.next()
 myGen.next()
 myGen.next()
@@ -42,8 +42,6 @@ myGen.next()
 let arr = [1, 2, 3, 4, 5]
 
 let truthiness = true && false
-
-//let newSet = mySet + ["a", "b", "c", "d", "qux"]
 
 mySet.addElements(["a", "b", "c", "qux", "yeah"])
 
@@ -59,10 +57,14 @@ mySet.allElements
 
 let secondSet = Set(sequence: ["what", "okay", "yeah"])
 
-let otherSet = mySet + secondSet
-
-otherSet.allElements
-
 arr.debugDescription
 arr.description
+
+let bleh = NSDate.date()
+let blah = 5.0
+
+let hithere = "hithere"
+let thirdchar = hithere.
+
+
 
