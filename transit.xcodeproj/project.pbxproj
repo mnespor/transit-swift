@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C5E871319D4B25D00A41722 /* Link.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5E870D19D4AD1E00A41722 /* Link.swift */; };
+		1C5E871419D4B26300A41722 /* Keyword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5E870F19D4AD3E00A41722 /* Keyword.swift */; };
+		1C5E871519D4B26700A41722 /* Symbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5E871119D4AD4800A41722 /* Symbol.swift */; };
+		1C5E871719D4C67900A41722 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5E871619D4C67900A41722 /* Helpers.swift */; };
 		1C5F335719C8FD2900F0CD4E /* Reader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9B386B19C8F8930071A339 /* Reader.swift */; };
 		1C5F335819C8FD2C00F0CD4E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9B386D19C8F91B0071A339 /* Constants.swift */; };
 		1C5F335B19C9014F00F0CD4E /* Set.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5F335919C8FF9D00F0CD4E /* Set.swift */; };
@@ -82,6 +86,10 @@
 
 /* Begin PBXFileReference section */
 		1C3879D319CA35660001316B /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
+		1C5E870D19D4AD1E00A41722 /* Link.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Link.swift; sourceTree = "<group>"; };
+		1C5E870F19D4AD3E00A41722 /* Keyword.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keyword.swift; sourceTree = "<group>"; };
+		1C5E871119D4AD4800A41722 /* Symbol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Symbol.swift; sourceTree = "<group>"; };
+		1C5E871619D4C67900A41722 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		1C5F335919C8FF9D00F0CD4E /* Set.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Set.swift; sourceTree = "<group>"; };
 		1C9B37FD19C8E9BF0071A339 /* ExampleApp-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ExampleApp-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C9B380119C8E9BF0071A339 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -106,7 +114,7 @@
 		1C9B386B19C8F8930071A339 /* Reader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reader.swift; sourceTree = "<group>"; };
 		1C9B386D19C8F91B0071A339 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		1CA2CC6119C8FC9B00DA17F7 /* TransitKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TransitKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1CA2CC6B19C8FC9B00DA17F7 /* Transit-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Transit-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CA2CC6B19C8FC9B00DA17F7 /* TransitKit-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TransitKit-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CA2CC7019C8FC9B00DA17F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1CA2CC7119C8FC9B00DA17F7 /* Transit_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transit_iOSTests.swift; sourceTree = "<group>"; };
 		1CA2CC7F19C8FCAE00DA17F7 /* Transit-iOS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Transit-iOS.h"; sourceTree = "<group>"; };
@@ -184,7 +192,7 @@
 				1C9B382419C8E9DA0071A339 /* ExampleApp-OSX.app */,
 				1C9B383619C8E9DA0071A339 /* ExampleApp-OSXTests.xctest */,
 				1CA2CC6119C8FC9B00DA17F7 /* TransitKit.framework */,
-				1CA2CC6B19C8FC9B00DA17F7 /* Transit-iOSTests.xctest */,
+				1CA2CC6B19C8FC9B00DA17F7 /* TransitKit-iOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -271,6 +279,10 @@
 				1C9B386B19C8F8930071A339 /* Reader.swift */,
 				1C9B386D19C8F91B0071A339 /* Constants.swift */,
 				1C5F335919C8FF9D00F0CD4E /* Set.swift */,
+				1C5E870D19D4AD1E00A41722 /* Link.swift */,
+				1C5E870F19D4AD3E00A41722 /* Keyword.swift */,
+				1C5E871119D4AD4800A41722 /* Symbol.swift */,
+				1C5E871619D4C67900A41722 /* Helpers.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -430,7 +442,7 @@
 			);
 			name = "TransitKit-iOSTests";
 			productName = "Transit-iOSTests";
-			productReference = 1CA2CC6B19C8FC9B00DA17F7 /* Transit-iOSTests.xctest */;
+			productReference = 1CA2CC6B19C8FC9B00DA17F7 /* TransitKit-iOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -577,8 +589,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C5F335719C8FD2900F0CD4E /* Reader.swift in Sources */,
+				1C5E871719D4C67900A41722 /* Helpers.swift in Sources */,
+				1C5E871419D4B26300A41722 /* Keyword.swift in Sources */,
 				1C5F335819C8FD2C00F0CD4E /* Constants.swift in Sources */,
 				1C5F335B19C9014F00F0CD4E /* Set.swift in Sources */,
+				1C5E871319D4B25D00A41722 /* Link.swift in Sources */,
+				1C5E871519D4B26700A41722 /* Symbol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

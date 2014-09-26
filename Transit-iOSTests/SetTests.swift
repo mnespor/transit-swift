@@ -8,7 +8,7 @@
 
 import UIKit
 import XCTest
-import Transit
+import TransitKit
 
 class SetTests: XCTestCase {
 
@@ -111,5 +111,13 @@ class SetTests: XCTestCase {
         XCTAssertNotNil(gen.next())
         XCTAssertNotNil(gen.next())
         XCTAssertNil(gen.next())
+    }
+    
+    func testHashable () {
+        let abc = Set(sequence: ["a", "b", "c"])
+        let cba = Set(sequence: ["c", "b", "a"])
+        let abd = Set(sequence: ["a", "b", "d"])
+        XCTAssertEqual(abc.hashValue, cba.hashValue)
+        XCTAssertNotEqual(abc.hashValue, abd.hashValue)
     }
 }

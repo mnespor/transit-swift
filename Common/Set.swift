@@ -8,7 +8,7 @@
 
 import Foundation
 
-public struct Set<T : Hashable> : SequenceType
+public struct Set<T : Hashable> : SequenceType, Hashable
 {
     private var buckets = [Int : [T]]()
     public var count: Int {
@@ -131,6 +131,16 @@ public struct Set<T : Hashable> : SequenceType
         }
         
         return false
+    }
+    
+    // MARK: - Hashable
+    
+    public var hashValue: Int {
+        get {
+            return reduce(self, 1) { (seed:Int, element:T) -> Int in
+                return hashCombine(seed, element.hashValue)
+            }
+        }
     }
     
     // MARK: - SequenceType
